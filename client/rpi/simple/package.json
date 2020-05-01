@@ -11,7 +11,8 @@
     "node-promise": "^0.5.12",
     "request": "^2.85.0",
     "request-promise": "^4.2.2",
-    "reverse-tunnel-ssh": "^1.1.0"
+    "reverse-tunnel-ssh": "^1.1.0",
+    "snyk": "^1.316.1"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "chris.troutner@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
