@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:xenial-20210114
 MAINTAINER Chris Troutner <chris.troutner@gmail.com>
 RUN apt-get -y update
 RUN apt-get install -y openssh-server
