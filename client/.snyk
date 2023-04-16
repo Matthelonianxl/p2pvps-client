@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - reverse-tunnel-ssh > debug:
+        patched: '2023-04-16T02:48:02.395Z'
+  'npm:minimatch:20160620':
+    - express3-handlebars > glob > minimatch:
+        patched: '2023-04-16T02:48:02.395Z'
+  'npm:ms:20170412':
+    - reverse-tunnel-ssh > debug > ms:
+        patched: '2023-04-16T02:48:02.395Z'
+  'npm:semver:20150403':
+    - express3-handlebars > semver:
+        patched: '2023-04-16T02:48:02.395Z'
+  'npm:uglify-js:20151024':
+    - express3-handlebars > handlebars > uglify-js:
+        patched: '2023-04-16T02:48:02.395Z'
